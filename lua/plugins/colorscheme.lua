@@ -1,14 +1,18 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
+    "ellisonleao/gruvbox.nvim",
     priority = 1000,
     opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      }
-    }
-  }
+      transparent_mode = true,
+      contrast = "hard",
+    },
+  },
+
+  --Tell LazyVim to use Gruvbox
+  {
+    "LazyVim/Lazyvim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
 }
